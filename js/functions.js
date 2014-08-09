@@ -1,5 +1,5 @@
 /**
- * Functionality specific to Twenty Thirteen.
+ * Functionality specific to Bootship.
  *
  * Provides helper functions to enhance the theme experience.
  */
@@ -46,12 +46,12 @@
 			return;
 		}
 
-		button.on( 'click.twentythirteen', function() {
+		button.on( 'click.bootship', function() {
 			nav.toggleClass( 'toggled-on' );
 		} );
 
 		// Better focus for hidden submenu items for accessibility.
-		menu.find( 'a' ).on( 'focus.twentythirteen blur.twentythirteen', function() {
+		menu.find( 'a' ).on( 'focus.bootship blur.bootship', function() {
 			$( this ).parents( '.menu-item, .page_item' ).toggleClass( 'focus' );
 		} );
 	} )();
@@ -62,7 +62,7 @@
 	 *
 	 * @link http://www.nczonline.net/blog/2013/01/15/fixing-skip-to-content-links/
 	 */
-	_window.on( 'hashchange.twentythirteen', function() {
+	_window.on( 'hashchange.bootship', function() {
 		var element = document.getElementById( location.hash.substring( 1 ) );
 
 		if ( element ) {

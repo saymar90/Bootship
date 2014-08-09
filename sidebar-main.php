@@ -5,8 +5,7 @@
  * If no active widgets in this sidebar, hide it completely.
  *
  * @package WordPress
- * @subpackage Twenty_Thirteen
- * @since Twenty Thirteen 1.0
+ * @since Bootship 0.1
  */
 
 if ( is_active_sidebar( 'sidebar-1' ) ) : ?>

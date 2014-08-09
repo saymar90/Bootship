@@ -3,8 +3,7 @@
  * The template for displaying all single posts
  *
  * @package WordPress
- * @subpackage Twenty_Thirteen
- * @since Twenty Thirteen 1.0
+ * @since Bootship 0.1
  */
 
 get_header(); ?>
@@ -16,7 +15,7 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php get_template_part( 'content', get_post_format() ); ?>
-				<?php twentythirteen_post_nav(); ?>
+				<?php bootship_post_nav(); ?>
 				<?php comments_template(); ?>
 
 			<?php endwhile; ?>

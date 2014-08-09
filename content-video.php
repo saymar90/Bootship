@@ -3,8 +3,7 @@
  * The template for displaying posts in the Video post format
  *
  * @package WordPress
- * @subpackage Twenty_Thirteen
- * @since Twenty Thirteen 1.0
+ * @since Bootship 0.1
  */
 ?>
 
@@ -20,19 +19,19 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
-		<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'twentythirteen' ) ); ?>
-		<?php wp_link_pages( array( 'before' => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'twentythirteen' ) . '</span>', 'after' => '</div>', 'link_before' => '<span>', 'link_after' => '</span>' ) ); ?>
+		<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'bootship' ) ); ?>
+		<?php wp_link_pages( array( 'before' => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'bootship' ) . '</span>', 'after' => '</div>', 'link_before' => '<span>', 'link_after' => '</span>' ) ); ?>
 	</div><!-- .entry-content -->
 
 	<footer class="entry-meta">
-		<?php twentythirteen_entry_meta(); ?>
+		<?php bootship_entry_meta(); ?>
 
 		<?php if ( comments_open() && ! is_single() ) : ?>
 		<span class="comments-link">
-			<?php comments_popup_link( '<span class="leave-reply">' . __( 'Leave a comment', 'twentythirteen' ) . '</span>', __( 'One comment so far', 'twentythirteen' ), __( 'View all % comments', 'twentythirteen' ) ); ?>
+			<?php comments_popup_link( '<span class="leave-reply">' . __( 'Leave a comment', 'bootship' ) . '</span>', __( 'One comment so far', 'bootship' ), __( 'View all % comments', 'bootship' ) ); ?>
 		</span><!-- .comments-link -->
 		<?php endif; // comments_open() ?>
-		<?php edit_post_link( __( 'Edit', 'twentythirteen' ), '<span class="edit-link">', '</span>' ); ?>
+		<?php edit_post_link( __( 'Edit', 'bootship' ), '<span class="edit-link">', '</span>' ); ?>
 
 		<?php if ( is_single() && get_the_author_meta( 'description' ) && is_multi_author() ) : ?>
 			<?php get_template_part( 'author-bio' ); ?>
