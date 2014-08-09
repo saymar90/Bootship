@@ -2,12 +2,6 @@
 
 Bootship is a startup theme for Advanced user who want to build professional WordPress theme based on Bootstrap.
 
-### What is this repository for? ###
-
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
-
 ### How do I Install this WordPress Theme via ftp? ###
 
 * Upload the ZIP file containing your theme to the /wp-content/themes directory. For more information, see Uploading Files to Your Website (FTP).
@@ -26,6 +20,7 @@ Bootship is a startup theme for Advanced user who want to build professional Wor
 * Writing tests
 * Code review
 * Other guidelines
+* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
 
 ### Who do I talk to? ###
 
