@@ -13,6 +13,6 @@ Bootship is a startup theme for Advanced user who want to build professional Wor
 2. This will take you to the Appearance section of your site. To find Bootship theme, choose Add New.
 3. You can search the **Bootship** theme by using the search tool.
 4. Once you find the theme, click the Install button that appears when you hover your mouse over the theme.
-* Now that the theme is installed, you can click Activate to immediately make your site start using this theme.
+5. Now that the theme is installed, you can click Activate to immediately make your site start using this theme.
 
 ### [See what you can do with Bootship](https://intside.com/themes/bootship/) ###
