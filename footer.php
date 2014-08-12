@@ -11,8 +11,6 @@
 
 		</div><!-- #main -->
 		<footer id="colophon" class="site-footer container" role="contentinfo">
-			<?php get_sidebar( 'main' ); ?>
-
 			<div class="site-info">
 				<?php do_action( 'bootship_credits' ); ?>
 				<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'bootship' ) ); ?>" title="<?php esc_attr_e( 'Semantic Personal Publishing Platform', 'bootship' ); ?>"><?php printf( __( 'Proudly powered by %s', 'bootship' ), 'WordPress' ); ?></a>

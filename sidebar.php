@@ -10,11 +10,11 @@
  * @since Bootship 0.1
  */
 
-if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
-	<div id="tertiary" class="sidebar-container" role="complementary">
+if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
+	<div id="tertiary" class="col-sm-4 sidebar-container" role="complementary">
 		<div class="sidebar-inner">
 			<div class="widget-area">
-				<?php dynamic_sidebar( 'sidebar-2' ); ?>
+				<?php dynamic_sidebar( 'sidebar-1' ); ?>
 			</div><!-- .widget-area -->
 		</div><!-- .sidebar-inner -->
 	</div><!-- #tertiary -->
