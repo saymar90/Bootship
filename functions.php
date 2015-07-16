@@ -176,7 +176,10 @@ function bootship_scripts_styles() {
 	wp_enqueue_style( 'bootship-fonts', bootship_fonts_url(), array(), null );
 
 	// Add Genericons font, used in the main stylesheet.
-	wp_enqueue_style( 'genericons', get_template_directory_uri() . '/fonts/genericons.css', array(), '2.09' );
+  wp_enqueue_style( 'genericons', get_template_directory_uri() . '/fonts/genericons.css', array(), '2.09' );
+
+	// Add Font Awesome font
+	wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/fonts/font-awesome.css', array(), '4.3.0' );
 
 	// Loads our main stylesheet.
 	wp_enqueue_style( 'bootship-bootstrapthemecss', get_template_directory_uri() . '/css/bootstrap-theme.css', array(), '3.2.0' );
