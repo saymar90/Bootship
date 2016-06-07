@@ -26,7 +26,7 @@
       controlGroup.each(function(){
         $(this).addClass('form-group').find('input, textarea, select').not('input[type="checkbox"], input[type="radio"], input[type="file"]').after('<span class="help-block"></span>').addClass('form-control');
       });
-      form.find("input[type='submit'], input[type='button']").addClass('btn btn-primary btn-lg pull-right').end().find('.gfield_error').removeClass('gfield_error').addClass('has-error');
+      form.find("input[type='submit'], input[type='button']").addClass('btn btn-primary').end().find('.gfield_error').removeClass('gfield_error').addClass('has-error');
       $('.gfield_checkbox, .gfield_radio').find('input[type="checkbox"], input[type="radio"]').each(function(){
         var sib = $(this).siblings('label');
         $(this).prependTo(sib);
