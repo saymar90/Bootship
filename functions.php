@@ -31,17 +31,6 @@ if ( ! isset( $content_width ) )
 	$content_width = 604;
 
 /**
- * Add support for a custom header image.
- */
-require get_template_directory() . '/inc/custom-header.php';
-
-/**
- * Bootship only works in WordPress 3.6 or later.
- */
-if ( version_compare( $GLOBALS['wp_version'], '3.6-alpha', '<' ) )
-	require get_template_directory() . '/inc/back-compat.php';
-
-/**
  * Bootship setup.
  *
  * Sets up theme defaults and registers the various WordPress features that
