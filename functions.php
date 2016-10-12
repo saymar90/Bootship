@@ -168,7 +168,7 @@ function bootship_scripts_styles() {
   wp_enqueue_style( 'genericons', get_template_directory_uri() . '/fonts/genericons.css', array(), '2.09' );
 
 	// Add Font Awesome font
-	wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/css/font-awesome.css', array(), '4.3.0' );
+	wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/css/font-awesome.css', array(), '4.6.3' );
 
 	// Loads our main stylesheet.
 	wp_enqueue_style( 'bootship-bootstrapcss', get_template_directory_uri() . '/css/bootstrap.css', array(), '4.0.4' );
