@@ -157,10 +157,10 @@ function bootship_scripts_styles() {
 	if ( is_active_sidebar( 'sidebar-1' ) )
 		wp_enqueue_script( 'jquery-masonry' );
 
-	// Loads JavaScript file with functionality specific to Boot Ship.
-	wp_enqueue_script( 'bootship-script', get_template_directory_uri() . '/js/functions.js', array( 'jquery' ), '2014-08-09', true );
-	wp_enqueue_script( 'bootship-bootstrapjs', get_template_directory_uri() . '/js/bootstrap.js', array( 'jquery' ), '4.0.4', true );
+  // Loads JavaScript file with functionality specific to Boot Ship.
+  wp_enqueue_script( 'bootship-script', get_template_directory_uri() . '/js/functions.js', array( 'jquery' ), '2016-08-09', true );
   wp_enqueue_script( 'tether', get_template_directory_uri() . '/css/tether.js', array(), '1.3.3', true );
+  wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.js', array( 'jquery', 'tether' ), '4.0.0-alpha.4', true );
 
 	// Add Source Sans Pro and Bitter fonts, used in the main stylesheet.
 	wp_enqueue_style( 'bootship-fonts', bootship_fonts_url(), array(), null );
@@ -172,11 +172,11 @@ function bootship_scripts_styles() {
 	wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/css/font-awesome.css', array(), '4.6.3' );
 
 	// Loads our main stylesheet.
-	wp_enqueue_style( 'bootship-bootstrapcss', get_template_directory_uri() . '/css/bootstrap.css', array(), '4.0.4' );
-	wp_enqueue_style( 'bootship-style', get_stylesheet_uri(), array(), '2014-08-09' );
+	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.css', array(), '4.0.0-alpha.4' );
+	wp_enqueue_style( 'bootship-style', get_stylesheet_uri(), array(), '2016-08-09' );
 
 	// Loads the Internet Explorer specific stylesheet.
-	wp_enqueue_style( 'bootship-ie', get_template_directory_uri() . '/css/ie.css', array( 'bootship-style' ), '2014-08-09' );
+	wp_enqueue_style( 'bootship-ie', get_template_directory_uri() . '/css/ie.css', array( 'bootship-style' ), '2016-08-09' );
 	wp_style_add_data( 'bootship-ie', 'conditional', 'lt IE 9' );
 }
 add_action( 'wp_enqueue_scripts', 'bootship_scripts_styles' );
