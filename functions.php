@@ -159,8 +159,8 @@ function bootship_scripts_styles() {
 
   // Loads JavaScript file with functionality specific to Boot Ship.
   wp_enqueue_script( 'bootship-script', get_template_directory_uri() . '/js/functions.js', array( 'jquery' ), '2016-08-09', true );
-  wp_enqueue_script( 'popper', get_template_directory_uri() . '/js/popper.js', array(), '1.3.3', true );
-  wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.js', array( 'jquery', 'popper' ), '4.0.0-beta', true );
+  wp_enqueue_script( 'popper', get_template_directory_uri() . '/js/popper.js', array(), '1.12.3', true );
+  wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.js', array( 'jquery', 'popper' ), ' v4.0.0-beta.2', true );
 
 	// Add Source Sans Pro and Bitter fonts, used in the main stylesheet.
 	wp_enqueue_style( 'bootship-fonts', bootship_fonts_url(), array(), null );
@@ -172,15 +172,15 @@ function bootship_scripts_styles() {
 	wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/css/font-awesome.css', array(), '4.7.0' );
 
 	// Loads our main stylesheet.
-	wp_enqueue_style( 'tether', get_template_directory_uri() . '/css/tether.css', array(), '4.0.0-beta' );
-	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.css', array(), '4.0.0-beta' );
+	wp_enqueue_style( 'tether', get_template_directory_uri() . '/css/tether.css', array(), 'v4.0.0-beta.2' );
+	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.css', array(), 'v4.0.0-beta.2' );
 	wp_enqueue_style( 'bootship-style', get_stylesheet_uri(), array(), '2016-08-09' );
 
 	// Loads the Internet Explorer specific stylesheet.
 	wp_enqueue_style( 'bootship-ie', get_template_directory_uri() . '/css/ie.css', array( 'bootship-style' ), '2016-08-09' );
 	wp_style_add_data( 'bootship-ie', 'conditional', 'lt IE 9' );
 }
-add_action( 'wp_enqueue_scripts', 'bootship_scripts_styles' );
+add_action( 'wp_enqueue_scripts', 'bootship_scripts_styles');
 
 /**
  * Filter the page title.
