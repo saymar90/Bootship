@@ -28,7 +28,7 @@
  * @see bootship_content_width() for template-specific adjustments.
  */
 if ( ! isset( $content_width ) )
-	$content_width = 604;
+	$content_width = 730;
 
 /**
  * Bootship setup.
