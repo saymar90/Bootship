@@ -162,7 +162,7 @@ function bootship_scripts_styles() {
   // Loads JavaScript file with functionality specific to Boot Ship.
   wp_enqueue_script( 'bootship-script', get_template_directory_uri() . '/js/functions.js', array( 'jquery' ), '2016-08-09', true );
   wp_enqueue_script( 'popper', get_template_directory_uri() . '/js/popper.js', array(), '1.12.8', true );
-  wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.js', array( 'jquery-slim', 'popper' ), ' v4.0.0-beta.2', true );
+  wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.js', array( 'jquery-slim', 'popper' ), ' v4.0.0-beta.3', true );
 
   // Add Source Sans Pro and Bitter fonts, used in the main stylesheet.
   wp_enqueue_style( 'bootship-fonts', bootship_fonts_url(), array(), null );
@@ -171,7 +171,7 @@ function bootship_scripts_styles() {
   wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/css/font-awesome.css', array(), '4.7.0' );
 
   // Loads our main stylesheet.
-  wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.css', array(), 'v4.0.0-beta.2' );
+  wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.css', array(), 'v4.0.0-beta.3' );
   wp_enqueue_style( 'bootship-style', get_stylesheet_uri(), array(), '2016-08-09' );
 
   // Loads the Internet Explorer specific stylesheet.
