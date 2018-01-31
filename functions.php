@@ -520,3 +520,89 @@ function bootship_customize_preview_js() {
 	wp_enqueue_script( 'bootship-customizer', get_template_directory_uri() . '/js/theme-customizer.js', array( 'customize-preview' ), '20130226', true );
 }
 add_action( 'customize_preview_init', 'bootship_customize_preview_js' );
+
+/**
+ * Register a partner, Etudiant posts types.
+ *
+ * @link http://codex.wordpress.org/Function_Reference/register_post_type
+ *
+ * @since bootship 0.1
+ */
+function bootship_register_post_type() {
+	$labels = array(
+		'name'               => _x( 'Etudiants', 'post type general name', 'bootship' ),
+		'singular_name'      => _x( 'Etudiant', 'post type singular name', 'bootship' ),
+		'menu_name'          => _x( 'Etudiants', 'admin menu', 'bootship' ),
+		'name_admin_bar'     => _x( 'Etudiant', 'add new on admin bar', 'bootship' ),
+		'add_new'            => _x( 'Ajouter un Nouvelle etudiant', 'etudiant', 'bootship' ),
+		'add_new_item'       => __( 'Nom Etudiant', 'bootship' ),
+		'new_item'           => __( 'Nouveau Etudiant', 'bootship' ),
+		'edit_item'          => __( 'Editer Etudiant', 'bootship' ),
+		'view_item'          => __( 'View Etudiant', 'bootship' ),
+		'all_items'          => __( 'All Etudiants', 'bootship' ),
+		'search_items'       => __( 'Search Etudiants', 'bootship' ),
+		'parent_item_colon'  => __( 'Parent Etudiants:', 'bootship' ),
+		'not_found'          => __( 'No etudiants found.', 'bootship' ),
+		'not_found_in_trash' => __( 'No etudiants found in Trash.', 'bootship' )
+	);
+
+	$args = array(
+		'labels'             => $labels,
+    'description'        => __( 'Description.', 'bootship' ),
+		'public'             => true,
+		'publicly_queryable' => true,
+		'show_ui'            => true,
+		'show_in_menu'       => true,
+		'query_var'          => true,
+		'rewrite'            => array('slug' => 'etudiant' ),
+		'capability_type'    => 'post',
+		'has_archive'        => true,
+		'hierarchical'       => false,
+		'menu_position'      => null,
+		'supports'           => array( 'title', 'thumbnail','excerpt','editor')
+	);
+
+	register_post_type( 'etudiant', $args );
+}
+add_action( 'init', 'bootship_register_post_type' );
+
+/**
+ * Add meta boxes to the post edit screen.
+ *
+ * @since bootship 0.1
+ */
+function bootship_add_meta_boxes() {
+	add_meta_box( 'etudiant_details', __( 'Student Details', 'bootship' ), 'etudiant_details', 'etudiant', 'normal', 'high' );
+}
+add_action( 'add_meta_boxes', 'bootship_add_meta_boxes' );
+
+/**
+ * Output meta box Petition details.
+ *
+ * @since bootship 0.1
+ */
+function etudiant_details( $post ) {
+	$etudiant_details_date = get_post_meta( $post->ID, '_etudiant_details_date', true );
+
+  echo '<p>';
+	echo '<label for="etudiant_details_date">' . __('Année d\'Inscription:', 'bootship' ) . '</label> ';
+  echo '<input id="etudiant_details_date" name="etudiant_details_date" type="date" style="width:99%;" value="' . $etudiant_details_date . '" />';
+  echo '</p>';
+
+}
+
+/**
+ * Save content posted in custom meta boxes.
+ *
+ * @since bootship 0.1
+ */
+function bootship_save_post( $post_id, $post ) {
+	if ( ( defined('DOING_AUTOSAVE') && DOING_AUTOSAVE ) || defined('DOING_AJAX') )
+		return $post_id;
+
+	if( 'etudiant' == $post->post_type ) {
+		if ( !current_user_can( 'edit_post', $post_id ) )
+			return $post_id;
+	return $post_id;
+}
+add_action( 'save_post', 'bootship_save_post', 10, 2 );
