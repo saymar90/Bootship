@@ -604,8 +604,9 @@ function bootship_save_post( $post_id, $post ) {
 		if ( !current_user_can( 'edit_post', $post_id ) )
 			return $post_id;
 
-			if ( isset( $_POST['projet_details_date'] ) )
-			update_post_meta( $post_id, '_projet_details_date', $_POST['projet_details_date'] );
+    if ( isset( $_POST['projet_details_date'] ) )
+      update_post_meta( $post_id, '_projet_details_date', $_POST['projet_details_date'] );
+  }
 	return $post_id;
 }
 add_action( 'save_post', 'bootship_save_post', 10, 2 );
