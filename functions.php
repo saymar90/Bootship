@@ -522,7 +522,7 @@ function bootship_customize_preview_js() {
 add_action( 'customize_preview_init', 'bootship_customize_preview_js' );
 
 /**
- * Register a partner, Projet posts types.
+ * Register Projects posts types.
  *
  * @link http://codex.wordpress.org/Function_Reference/register_post_type
  *
@@ -530,39 +530,39 @@ add_action( 'customize_preview_init', 'bootship_customize_preview_js' );
  */
 function bootship_register_post_type() {
 	$labels = array(
-		'name'               => _x( 'Projets', 'post type general name', 'bootship' ),
-		'singular_name'      => _x( 'Projet', 'post type singular name', 'bootship' ),
-		'menu_name'          => _x( 'Projets', 'admin menu', 'bootship' ),
-		'name_admin_bar'     => _x( 'Projet', 'add new on admin bar', 'bootship' ),
-		'add_new'            => _x( 'Ajouter un Nouvelle projet', 'projet', 'bootship' ),
-		'add_new_item'       => __( 'Nom Projet', 'bootship' ),
-		'new_item'           => __( 'Nouveau Projet', 'bootship' ),
-		'edit_item'          => __( 'Editer Projet', 'bootship' ),
-		'view_item'          => __( 'View Projet', 'bootship' ),
-		'all_items'          => __( 'All Projets', 'bootship' ),
-		'search_items'       => __( 'Search Projets', 'bootship' ),
-		'parent_item_colon'  => __( 'Parent Projets:', 'bootship' ),
-		'not_found'          => __( 'No projets found.', 'bootship' ),
-		'not_found_in_trash' => __( 'No projets found in Trash.', 'bootship' )
+		'name'               => _x( 'Projects', 'post type general name', 'bootship' ),
+		'singular_name'      => _x( 'Project', 'post type singular name', 'bootship' ),
+		'menu_name'          => _x( 'Projects', 'admin menu', 'bootship' ),
+		'name_admin_bar'     => _x( 'Project', 'add new on admin bar', 'bootship' ),
+		'add_new'            => _x( 'Add New', 'project', 'bootship' ),
+		'add_new_item'       => __( 'Add New Project', 'bootship' ),
+		'new_item'           => __( 'New Project', 'bootship' ),
+		'edit_item'          => __( 'Edit Project', 'bootship' ),
+		'view_item'          => __( 'View Project', 'bootship' ),
+		'all_items'          => __( 'All Projects', 'bootship' ),
+		'search_items'       => __( 'Search Projects', 'bootship' ),
+		'parent_item_colon'  => __( 'Parent Projects:', 'bootship' ),
+		'not_found'          => __( 'No projects found.', 'bootship' ),
+		'not_found_in_trash' => __( 'No projects found in Trash.', 'bootship' )
 	);
 
 	$args = array(
 		'labels'             => $labels,
-    'description'        => __( 'Description.', 'bootship' ),
+		'description'        => __( 'Description.', 'bootship' ),
 		'public'             => true,
 		'publicly_queryable' => true,
 		'show_ui'            => true,
 		'show_in_menu'       => true,
 		'query_var'          => true,
-		'rewrite'            => array('slug' => 'projet' ),
+		'rewrite'            => array( 'slug' => 'project' ),
 		'capability_type'    => 'post',
 		'has_archive'        => true,
 		'hierarchical'       => false,
 		'menu_position'      => null,
-		'supports'           => array( 'title', 'thumbnail','excerpt','editor')
+		'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' )
 	);
 
-	register_post_type( 'projet', $args );
+	register_post_type( 'project', $args );
 }
 add_action( 'init', 'bootship_register_post_type' );
 
@@ -572,7 +572,7 @@ add_action( 'init', 'bootship_register_post_type' );
  * @since bootship 0.1
  */
 function bootship_add_meta_boxes() {
-	add_meta_box( 'projet_details', __( 'Dossier Client', 'bootship' ), 'projet_details', 'projet', 'normal', 'high' );
+	add_meta_box( 'project_details', __( 'Contactor', 'bootship' ), 'project_details', 'project', 'normal', 'high' );
 }
 add_action( 'add_meta_boxes', 'bootship_add_meta_boxes' );
 
@@ -581,14 +581,13 @@ add_action( 'add_meta_boxes', 'bootship_add_meta_boxes' );
  *
  * @since bootship 0.1
  */
-function projet_details( $post ) {
-	$projet_details_date = get_post_meta( $post->ID, '_projet_details_date', true );
+function project_details( $post ) {
+	$project_contractor_name = get_post_meta( $post->ID, '_project_contractor_name', true );
 
-  echo '<p>';
-	echo '<label for="projet_details_date">' . __('Date Debut:', 'bootship' ) . '</label> ';
-  echo '<input id="projet_details_date" name="projet_details_date" type="date" style="width:99%;" value="' . $projet_details_date . '" />';
-  echo '</p>';
-
+	echo '<p>';
+		echo '<label for="project_contractor_name">' . __('Name:', 'bootship' ) . '</label> ';
+		echo '<input id="project_contractor_name" name="project_contractor_name" type="text" style="width:99%;" value="' . $project_contractor_name . '" />';
+	echo '</p>';
 }
 
 /**
@@ -600,13 +599,13 @@ function bootship_save_post( $post_id, $post ) {
 	if ( ( defined('DOING_AUTOSAVE') && DOING_AUTOSAVE ) || defined('DOING_AJAX') )
 		return $post_id;
 
-	if( 'projet' == $post->post_type ) {
+	if( 'project' == $post->post_type ) {
 		if ( !current_user_can( 'edit_post', $post_id ) )
 			return $post_id;
-
-    if ( isset( $_POST['projet_details_date'] ) )
-      update_post_meta( $post_id, '_projet_details_date', $_POST['projet_details_date'] );
-  }
+		
+		if ( isset( $_POST['project_contractor_name'] ) )
+			update_post_meta( $post_id, '_project_contractor_name', $_POST['project_contractor_name'] );
+	}
 	return $post_id;
 }
 add_action( 'save_post', 'bootship_save_post', 10, 2 );
