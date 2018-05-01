@@ -165,12 +165,12 @@ function bootship_scripts_styles() {
   // Add Source Sans Pro and Bitter fonts, used in the main stylesheet.
   wp_enqueue_style( 'bootship-fonts', bootship_fonts_url(), array(), null );
 
-  // Add Font Awesome font
-  wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/css/font-awesome.css', array(), '4.7.0' );
-
   // Loads our main stylesheet.
   wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.css', array(), 'v4.1.1' );
   wp_enqueue_style( 'bootship-style', get_stylesheet_uri(), array(), '2016-08-09' );
+
+  // Font Awesome stylesheet
+  wp_enqueue_style( 'fontawesome', 'https://use.fontawesome.com/releases/v5.0.10/css/all.css', array(), '5.0.10' );
 
   // Loads the Internet Explorer specific stylesheet.
   wp_enqueue_style( 'bootship-ie', get_template_directory_uri() . '/css/ie.css', array( 'bootship-style' ), '2016-08-09' );
