@@ -60,7 +60,7 @@ function bootship_setup() {
 	 * This theme styles the visual editor to resemble the theme style,
 	 * specifically font, colors, icons, and column width.
 	 */
-	add_editor_style( array( 'css/editor-style.css', 'fonts/genericons.css', bootship_fonts_url() ) );
+	add_editor_style( array( 'css/editor-style.css', 'https://use.fontawesome.com/releases/v5.0.13/css/all.css', bootship_fonts_url() ) );
 
 	// Adds RSS feed links to <head> for posts and comments.
 	add_theme_support( 'automatic-feed-links' );
