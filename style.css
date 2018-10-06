@@ -583,23 +583,23 @@ img.wp-smiley,
  * ----------------------------------------------------------------------------
  */
 
-/* Extra small devices (portrait phones, less than 34em) */
-@media (max-width: 543px) {
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
 }
 
-/* Small devices (landscape phones, less than 48em) */
-@media (min-width: 544px) and (max-width: 767px) {
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
 }
 
-/* Medium devices (tablets, less than 62em) */
-@media (min-width: 768px) and (max-width: 991px) {
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
 }
 
-/* Large devices (desktops, less than 75em) */
-@media (min-width: 992px) and (max-width: 1199px) {
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
 }
 
-/* Extra large devices (desktops, more than than 75em) */
+/* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
 }
 
