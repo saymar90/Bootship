@@ -159,7 +159,7 @@ function bootship_scripts_styles() {
 
   // Loads JavaScript file with functionality specific to Boot Ship.
   wp_enqueue_script( 'bootship-script', get_template_directory_uri() . '/js/functions.js', array( 'jquery' ), '2016-08-09', true );
-  wp_enqueue_script( 'popper', get_template_directory_uri() . '/js/popper.js', array(), '1.14.3', true );
+  wp_enqueue_script( 'popper', get_template_directory_uri() . '/js/popper.js', array(), '1.14.7', true );
   wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.js', array( 'jquery', 'popper' ), ' v4.2.1', true );
 
   // Add Source Sans Pro and Bitter fonts, used in the main stylesheet.
