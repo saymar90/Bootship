@@ -170,7 +170,7 @@ function bootship_scripts_styles() {
   wp_enqueue_style( 'bootship-style', get_stylesheet_uri(), array(), '2016-08-09' );
 
   // Font Awesome stylesheet
-  wp_enqueue_style( 'fontawesome', 'https://use.fontawesome.com/releases/v5.7.1/css/all.css', array(), '5.5.0' );
+  wp_enqueue_style( 'fontawesome', 'https://use.fontawesome.com/releases/v5.7.2/css/all.css', array(), '5.7.2' );
 
   // Loads the Internet Explorer specific stylesheet.
   wp_enqueue_style( 'bootship-ie', get_template_directory_uri() . '/css/ie.css', array( 'bootship-style' ), '2016-08-09' );
