@@ -37,9 +37,9 @@ Use it to make something cool, have fun, and share what you've learned with othe
  */
 
 * {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing:    border-box;
-	box-sizing:         border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 article,
@@ -52,59 +52,56 @@ header,
 nav,
 section,
 summary {
-	display: block;
+    display: block;
 }
 
 audio,
 canvas,
 video {
-	display: inline-block;
+    display: inline-block;
 }
 
 audio:not([controls]) {
-	display: none;
-	height: 0;
+    display: none;
+    height: 0;
 }
 
 [hidden] {
-	display: none;
+    display: none;
 }
 
 html {
-	font-size: 100%;
-	overflow-y: scroll;
-	-webkit-text-size-adjust: 100%;
-	-ms-text-size-adjust: 100%;
+    font-size: 100%;
+    overflow-y: scroll;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
 }
 
 html,
 button,
 input,
 select,
-textarea {
-}
+textarea {}
 
-body {
-}
+body {}
 
 a {
-	text-decoration: none;
+    text-decoration: none;
 }
 
-a:visited {
-}
+a:visited {}
 
 a:focus {
-	outline: thin dotted;
+    outline: thin dotted;
 }
 
 a:active,
 a:hover {
-	outline: 0;
+    outline: 0;
 }
 
 a:hover {
-	text-decoration: underline;
+    text-decoration: underline;
 }
 
 h1,
@@ -113,277 +110,277 @@ h3,
 h4,
 h5,
 h6 {
-	clear: both;
+    clear: both;
 }
 
 address {
-	font-style: italic;
+    font-style: italic;
 }
 
 abbr[title] {
-	border-bottom: 1px dotted;
+    border-bottom: 1px dotted;
 }
 
 b,
 strong {
-	font-weight: bold;
+    font-weight: bold;
 }
 
 dfn {
-	font-style: italic;
+    font-style: italic;
 }
 
 mark {
-	background: #ff0;
-	color: #000;
+    background: #ff0;
+    color: #000;
 }
 
-p {
-}
+p {}
 
 code,
 kbd,
 pre,
 samp {
-	-webkit-hyphens: none;
-	-moz-hyphens:    none;
-	-ms-hyphens:     none;
-	hyphens:         none;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
 }
 
 pre {
-	overflow: auto;
-	white-space: pre;
-	white-space: pre-wrap;
+    overflow: auto;
+    white-space: pre;
+    white-space: pre-wrap;
 }
 
 blockquote,
 q {
-	-webkit-hyphens: none;
-	-moz-hyphens:    none;
-	-ms-hyphens:     none;
-	hyphens:         none;
-	quotes: none;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+    quotes: none;
 }
 
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-	content: "";
-	content: none;
+    content: "";
+    content: none;
 }
 
 blockquote {
-	font-style: italic;
-	font-weight: 300;
-	margin: 24px 40px;
+    font-style: italic;
+    font-weight: 300;
+    margin: 24px 40px;
 }
 
 blockquote blockquote {
-	margin-right: 0;
+    margin-right: 0;
 }
 
 blockquote cite,
 blockquote small {
-	font-weight: normal;
-	text-transform: uppercase;
+    font-weight: normal;
+    text-transform: uppercase;
 }
 
 blockquote em,
 blockquote i {
-	font-style: normal;
-	font-weight: 300;
+    font-style: normal;
+    font-weight: 300;
 }
 
 blockquote strong,
 blockquote b {
-	font-weight: 400;
+    font-weight: 400;
 }
 
 small {
-	font-size: smaller;
+    font-size: smaller;
 }
 
 sub,
 sup {
-	line-height: 0;
-	position: relative;
-	vertical-align: baseline;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
 }
 
 sup {
-	top: -0.5em;
+    top: -0.5em;
 }
 
 sub {
-	bottom: -0.25em;
+    bottom: -0.25em;
 }
 
 dl {
-	margin: 0 20px;
+    margin: 0 20px;
 }
 
 dt {
-	font-weight: bold;
+    font-weight: bold;
 }
 
 dd {
-	margin: 0 0 20px;
+    margin: 0 0 20px;
 }
 
 menu,
 ol,
 ul {
-	margin: 16px 0;
-	padding: 0 0 0 40px;
+    margin: 16px 0;
+    padding: 0 0 0 40px;
 }
 
 ul {
-	list-style-type: square;
+    list-style-type: square;
 }
 
 nav ul,
 nav ol {
-	list-style: none;
-	list-style-image: none;
+    list-style: none;
+    list-style-image: none;
 }
 
-li > ul,
-li > ol {
-	margin: 0;
+li>ul,
+li>ol {
+    margin: 0;
 }
 
 img {
-  max-width: 100%;
-  height: auto;
-	-ms-interpolation-mode: bicubic;
-	border: 0;
-	vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+    -ms-interpolation-mode: bicubic;
+    border: 0;
+    vertical-align: middle;
 }
 
 svg:not(:root) {
-	overflow: hidden;
+    overflow: hidden;
 }
 
 figure {
-	margin: 0;
+    margin: 0;
 }
 
 form {
-	margin: 0;
+    margin: 0;
 }
 
 fieldset {
-	border: 1px solid #c0c0c0;
-	margin: 0 2px;
-	padding: 0.35em 0.625em 0.75em;
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
 }
 
 legend {
-	border: 0;
-	padding: 0;
-	white-space: normal;
+    border: 0;
+    padding: 0;
+    white-space: normal;
 }
 
 button,
 input,
 select,
 textarea {
-	font-size: 100%;
-	margin: 0;
-	max-width: 100%;
-	vertical-align: baseline;
+    font-size: 100%;
+    margin: 0;
+    max-width: 100%;
+    vertical-align: baseline;
 }
 
 button,
 input {
-	line-height: normal;
+    line-height: normal;
 }
 
 button,
 html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	-webkit-appearance: button;
-	cursor: pointer;
+    -webkit-appearance: button;
+    cursor: pointer;
 }
 
 button[disabled],
 input[disabled] {
-	cursor: default;
+    cursor: default;
 }
 
 input[type="checkbox"],
 input[type="radio"] {
-	padding: 0;
+    padding: 0;
 }
 
 input[type="search"] {
-	-webkit-appearance: textfield;
-	padding-right: 2px; /* Don't cut off the webkit search cancel button */
-	width: 270px;
+    -webkit-appearance: textfield;
+    padding-right: 2px;
+    /* Don't cut off the webkit search cancel button */
+    width: 270px;
 }
 
 input[type="search"]::-webkit-search-decoration {
-	-webkit-appearance: none;
+    -webkit-appearance: none;
 }
 
 button::-moz-focus-inner,
 input::-moz-focus-inner {
-	border: 0;
-	padding: 0;
+    border: 0;
+    padding: 0;
 }
 
 textarea {
-	overflow: auto;
-	vertical-align: top;
+    overflow: auto;
+    vertical-align: top;
 }
 
 table {
-	border-bottom: 1px solid #ededed;
-	border-collapse: collapse;
-	border-spacing: 0;
-	line-height: 2;
-	width: 100%;
+    border-bottom: 1px solid #ededed;
+    border-collapse: collapse;
+    border-spacing: 0;
+    line-height: 2;
+    width: 100%;
 }
 
 caption,
 th,
 td {
-	font-weight: normal;
-	text-align: left;
+    font-weight: normal;
+    text-align: left;
 }
 
 caption {
-	margin: 20px 0;
+    margin: 20px 0;
 }
 
 th {
-	font-weight: bold;
-	text-transform: uppercase;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 td {
-	border-top: 1px solid #ededed;
-	padding: 6px 10px 6px 0;
+    border-top: 1px solid #ededed;
+    padding: 6px 10px 6px 0;
 }
 
 del {
-	color: #333;
+    color: #333;
 }
 
 ins {
-	background: #fff9c0;
-	text-decoration: none;
+    background: #fff9c0;
+    text-decoration: none;
 }
 
 hr {
-	background: url(images/dotted-line.png) repeat center top;
-	background-size: 4px 4px;
-	border: 0;
-	height: 1px;
-	margin: 0 0 24px;
+    background: url(images/dotted-line.png) repeat center top;
+    background-size: 4px 4px;
+    border: 0;
+    height: 1px;
+    margin: 0 0 24px;
 }
 
 
@@ -409,15 +406,17 @@ hr {
 .comment-reply-link:before,
 .comment-reply-login:before,
 .comment-reply-title small a:before,
-.bypostauthor > .comment-body .fn:before,
+.bypostauthor>.comment-body .fn:before,
 .error404 .page-title:before {
-	-webkit-font-smoothing: antialiased;
-	display: inline-block;
-	font: normal 16px/1 Genericons;
-	vertical-align: text-bottom;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font: normal 16px/1 Genericons;
+    vertical-align: text-bottom;
 }
 
+
 /* Clearing floats */
+
 .clear:after,
 .attachment .entry-header:after,
 .site-footer .widget-area:after,
@@ -430,7 +429,7 @@ hr {
 .comment-form-email:after,
 .comment-form-url:after,
 .comment-body:after {
-	clear: both;
+    clear: both;
 }
 
 .clear:before,
@@ -457,117 +456,122 @@ hr {
 .comment-form-url:after,
 .comment-body:before,
 .comment-body:after {
-	content: "";
-	display: table;
+    content: "";
+    display: table;
 }
 
+
 /* Assistive text */
+
 .screen-reader-text {
-	clip: rect(1px, 1px, 1px, 1px);
-	position: absolute !important;
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
 }
 
 .screen-reader-text:focus {
-	background-color: #f1f1f1;
-	border-radius: 3px;
-	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-	clip: auto !important;
-	color: #21759b;
-	display: block;
-	font-size: 14px;
-	font-weight: bold;
-	height: auto;
-	line-height: normal;
-	padding: 15px 23px 14px;
-	position: absolute;
-	left: 5px;
-	top: 5px;
-	text-decoration: none;
-	width: auto;
-	z-index: 100000; /* Above WP toolbar */
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    color: #21759b;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    height: auto;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    text-decoration: none;
+    width: auto;
+    z-index: 100000;
+    /* Above WP toolbar */
 }
+
 
 /* Images */
+
 figure,
 img {
-  max-width: 100%;
+    max-width: 100%;
 }
 
 img {
-  height: auto;
+    height: auto;
 }
 
 .alignleft {
-	float: left;
+    float: left;
 }
 
 .alignright {
-	float: right;
+    float: right;
 }
 
 .aligncenter {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 figure.wp-caption.alignleft,
 img.alignleft {
-	margin: 5px 20px 5px 0;
+    margin: 5px 20px 5px 0;
 }
 
 .wp-caption.alignleft {
-	margin: 5px 10px 5px 0;
+    margin: 5px 10px 5px 0;
 }
 
 figure.wp-caption.alignright,
 img.alignright {
-	margin: 5px 0 5px 20px;
+    margin: 5px 0 5px 20px;
 }
 
 .wp-caption.alignright {
-	margin: 5px 0 5px 10px;
+    margin: 5px 0 5px 10px;
 }
 
 img.aligncenter {
-	margin: 5px auto;
+    margin: 5px auto;
 }
 
 img.alignnone {
-	margin: 5px 0;
+    margin: 5px 0;
 }
 
 .wp-caption .wp-caption-text,
 .entry-caption,
 .gallery-caption {
-	color: #220e10;
-	font-size: 18px;
-	font-style: italic;
-	font-weight: 300;
-	margin: 0 0 24px;
+    color: #220e10;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 300;
+    margin: 0 0 24px;
 }
 
 div.wp-caption.alignright img[class*="wp-image-"] {
-	float: right;
+    float: right;
 }
 
 div.wp-caption.alignright .wp-caption-text {
-	padding-left: 10px;
+    padding-left: 10px;
 }
 
 img.wp-smiley,
 .rsswidget img {
-	border: 0;
-	border-radius: 0;
-	box-shadow: none;
-	margin-bottom: 0;
-	margin-top: 0;
-	padding: 0;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0;
 }
 
-.wp-caption.alignleft + ul,
-.wp-caption.alignleft + ol {
-	list-style-position: inside;
+.wp-caption.alignleft+ul,
+.wp-caption.alignleft+ol {
+    list-style-position: inside;
 }
 
 
@@ -577,29 +581,67 @@ img.wp-smiley,
  */
 
 
-
 /**
  * 4.0 Media Queries
  * ----------------------------------------------------------------------------
  */
 
-/* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+    /* //CSS */
 }
 
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 767.98px) {
+
+/* 
+	##Device = Laptops, Desktops
+	##Screen = B/w 1025px to 1280px
+  */
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    /* //CSS */
 }
 
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991.98px) {
+
+/* 
+	##Device = Tablets, Ipads (portrait)
+	##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* //CSS */
 }
 
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1199.98px) {
+
+/* 
+	##Device = Tablets, Ipads (landscape)
+	##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    /* //CSS */
 }
 
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
+
+/* 
+	##Device = Low Resolution Tablets, Mobiles (Landscape)
+	##Screen = B/w 481px to 767px
+  */
+
+@media (min-width: 481px) and (max-width: 767px) {
+    /* //CSS */
 }
 
+
+/* 
+	##Device = Most of the Smartphones Mobiles (Portrait)
+	##Screen = B/w 320px to 479px
+  */
+
+@media (min-width: 320px) and (max-width: 480px) {
+    /* //CSS */
+}
