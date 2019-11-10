@@ -583,6 +583,14 @@ img.wp-smiley,
  * ----------------------------------------------------------------------------
  */
 
+/* WordPress Media Queries */
+@media (max-width: 600.98px) {
+}
+@media (min-width: 601px) and (max-width: 782.98px) {
+}
+@media (min-width: 783px) {
+}
+
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
 }
