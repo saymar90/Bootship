@@ -126,5 +126,7 @@
 			isRTL: body.is( '.rtl' )
 		} );
 	}
+
+  new WOW().init();
 } )( jQuery );
 
