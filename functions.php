@@ -160,27 +160,27 @@ function bootship_scripts_styles() {
   // Loads JavaScript file with functionality specific to Boot Ship.
   wp_enqueue_script( 'bootship-script', get_template_directory_uri() . '/js/functions.js', array( 'jquery', 'wow' ), '2020-08-09', true );
   wp_enqueue_script( 'popper', get_template_directory_uri() . '/js/popper.js', array(), '1.16.0', true );
-  wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.js', array( 'jquery', 'popper' ), ' v4.5.0', true );
+  wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.js', array( 'jquery', 'popper' ), '4.5.0', true );
 
   // WOW.js @link https://github.com/matthieua/WOW
-  wp_enqueue_script( 'wow', get_template_directory_uri() . '/js/wow.js', array(), ' v1.1.3', true );
+  wp_enqueue_script( 'wow', get_template_directory_uri() . '/js/wow.js', array( 'jquery' ), '1.1.3', true );
 
   // Add Source Sans Pro and Bitter fonts, used in the main stylesheet.
   wp_enqueue_style( 'bootship-fonts', bootship_fonts_url(), array(), null );
 
   // Loads our main stylesheet.
-  wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.css', array(), 'v4.5.0' );
-  wp_enqueue_style( 'bootship-theme', get_template_directory_uri() . '/css/theme.css', array(), 'v1.0' );
+  wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.css', array(), '4.5.0' );
+  wp_enqueue_style( 'bootship-theme', get_template_directory_uri() . '/css/theme.css', array(), '1.0' );
   wp_enqueue_style( 'bootship-style', get_stylesheet_uri(), array(), '2016-08-09' );
 
   // Font Awesome stylesheet
   wp_enqueue_style( 'fontawesome', 'https://use.fontawesome.com/releases/v5.13.0/css/all.css', array(), '5.13.0' );
 
   // Animate CSS @link: https://animate.style stylesheet
-  wp_enqueue_style( 'animate', get_template_directory_uri() . '/css/animate.css', array(), 'v4.1.0' );
+  wp_enqueue_style( 'animate', get_template_directory_uri() . '/css/animate.css', array(), '3.7.2' );
 
   // Hover CSS @link: https://github.com/IanLunn/Hover stylesheet
-  wp_enqueue_style( 'hover', get_template_directory_uri() . '/css/hover.css', array(), 'v2.3.2' );
+  wp_enqueue_style( 'hover', get_template_directory_uri() . '/css/hover.css', array(), '2.3.2' );
 
   // Loads the Internet Explorer specific stylesheet.
   wp_enqueue_style( 'bootship-ie', get_template_directory_uri() . '/css/ie.css', array( 'bootship-style' ), '2016-08-09' );
