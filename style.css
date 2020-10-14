@@ -570,6 +570,118 @@ img.wp-smiley,
 	list-style-position: inside;
 }
 
+/* Body Typography */
+p {
+	margin: 0 0 10px;
+	line-height: 1.6;
+}
+
+blockquote {
+	text-align: center;
+	background: #fff9f5;
+	padding: 20px 40px;
+	margin: 0;
+	position: relative;
+}
+
+blockquote::before, blockquote::after {
+	position: absolute;
+	content: "\f114";
+	font-family: themegrill-icons;
+	display: block;
+	top: 10px;
+	left: 20px;
+}
+
+blockquote::after {
+	content: "\f115";
+	top: auto;
+	left: auto;
+	right: 20px;
+	bottom: 10px;
+}
+
+blockquote cite {
+	position: relative;
+	display: inline-block;
+	padding: 0 20px;
+	font-size: 14px;
+	margin-top: 20px;
+}
+
+blockquote cite::before {
+	content: "";
+	background-color: #363b40;
+	width: 10px;
+	height: 1px;
+	display: block;
+	position: absolute;
+	top: 10px;
+	left: 0;
+}
+
+code {
+	background-color: #f1f3f5;
+	padding: 0.125em 0.25em;
+}
+
+pre {
+	background-color: #f8f9fa;
+	padding: 20px;
+}
+
+.entry-content {
+	line-height: 1.8;
+}
+
+.entry-content p {
+	line-height: inherit;
+}
+
+/* Table */
+table {
+	margin: 0 0 1.5em;
+	width: 100%;
+}
+
+table th,
+table td,
+table .wp-block-table th,
+table .wp-block-table td {
+	text-align: left;
+	border: 1px solid #e9ecef;
+	padding: 1em;
+}
+
+.entry-content table a {
+	text-decoration: none;
+	color: #363b40;
+}
+
+.entry-content table a:hover {
+	color: #01b6f4;
+}
+
+.archive .archive-header {
+	background-color: #dee2e6;
+	padding: 40px 0;
+	position: relative;
+}
+
+.archive .archive-header .page-title {
+	margin: 0;
+	font-size: 2.25rem;
+}
+
+.archive .archive-header .archive-description {
+	margin-top: 10px;
+	font-size: 14px;
+	color: #f8f9fa;
+}
+
+.archive .archive-header .archive-description p {
+	margin-bottom: 0;
+}
 
 /* Error Page */
 .error404 #primary {

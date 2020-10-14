@@ -15,23 +15,29 @@ get_header(); ?>
 
 		<?php if ( have_posts() ) : ?>
 			<header class="archive-header">
-				<h1 class="archive-title"><?php printf( __( 'Category Archives: %s', 'bootship' ), single_cat_title( '', false ) ); ?></h1>
-
-				<?php if ( category_description() ) : // Show an optional category description ?>
-				<div class="archive-meta"><?php echo category_description(); ?></div>
-				<?php endif; ?>
+				<div class="container">
+					<h1 class="archive-title"><?php printf( __( 'Category Archives: %s', 'bootship' ), single_cat_title( '', false ) ); ?></h1>
+	
+					<?php if ( category_description() ) : // Show an optional category description ?>
+					<div class="archive-meta"><?php echo category_description(); ?></div>
+					<?php endif; ?>
+				</div>
 			</header><!-- .archive-header -->
 
-			<?php /* The loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
-				<?php get_template_part( 'content', get_post_format() ); ?>
-			<?php endwhile; ?>
+			<section class="p-7">
+				<div class="container">
+					<?php /* The loop */ ?>
+					<?php while ( have_posts() ) : the_post(); ?>
+						<?php get_template_part( 'content', get_post_format() ); ?>
+					<?php endwhile; ?>
 
-			<?php bootship_paging_nav(); ?>
+					<?php bootship_paging_nav(); ?>
 
-		<?php else : ?>
-			<?php get_template_part( 'content', 'none' ); ?>
-		<?php endif; ?>
+					<?php else : ?>
+						<?php get_template_part( 'content', 'none' ); ?>
+					<?php endif; ?>
+				</div>
+			</section>
 
 		</div><!-- #content -->
 	</div><!-- #primary -->
