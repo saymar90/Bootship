@@ -43,15 +43,21 @@
 				<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
 				<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 			</a>
-
-			<div id="navbar" class="navbar">
-				<nav id="site-navigation" class="navigation main-navigation" role="navigation">
-					<h3 class="menu-toggle"><?php _e( 'Menu', 'bootship' ); ?></h3>
-					<a class="screen-reader-text skip-link" href="#content" title="<?php esc_attr_e( 'Skip to content', 'bootship' ); ?>"><?php _e( 'Skip to content', 'bootship' ); ?></a>
-					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
-					<?php get_search_form(); ?>
-				</nav><!-- #site-navigation -->
-			</div><!-- #navbar -->
-		</header><!-- #masthead -->
+    </header>
+    
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light navbar-area">
+      <div class="container">
+        <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+          <h3 class="menu-toggle"><?php _e( 'Menu', 'bootship' ); ?></h3>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'navbar-nav ml-auto' ) ); ?>
+          <?php get_search_form(); ?>
+        </div>
+      </div>
+    </nav>
 
 		<div id="main" class="site-main container">

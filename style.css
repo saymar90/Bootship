@@ -736,6 +736,43 @@ table .wp-block-table td {
 	right: 0;
 }
 
+/* Navigation */
+#navbar {
+	z-index: 3;
+	width: 100%;
+}
+
+#navbar ul {
+	line-height: 2;
+	position: relative;
+}
+
+#navbar ul li {
+	display: inline-block;
+}
+
+#navbar ul li a {
+	display: block;
+	margin: 0;
+	padding: 0 1rem;
+	color: #333;
+	font-weight: 500;
+	font-size: 1rem;
+}
+
+#navbar ul li a:last-child {
+	padding: 0 0 0 1rem;
+}
+
+#navbar ul li.current_page_item a {
+	color: #007bff;
+}
+
+/* Active link */
+#navbar ul li a:hover {
+	color: #007bff;
+}
+
 /**
  * 3.0 Basic Structure
  * ----------------------------------------------------------------------------
