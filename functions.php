@@ -298,12 +298,15 @@ function bootship_post_nav() {
 		return;
 	?>
 	<nav class="navigation post-navigation" role="navigation">
-		<h1 class="screen-reader-text"><?php _e( 'Post navigation', 'bootship' ); ?></h1>
+		<h1 class="screen-reader-text"><?php _e( 'Post navigation', 'mesther' ); ?></h1>
 		<div class="nav-links">
-
-			<?php previous_post_link( '%link', _x( '<span class="meta-nav">&larr;</span> %title', 'Previous post link', 'bootship' ) ); ?>
-			<?php next_post_link( '%link', _x( '%title <span class="meta-nav">&rarr;</span>', 'Next post link', 'bootship' ) ); ?>
-
+			<div class="nav-previous">
+				<?php previous_post_link( '<span class="nav-links__label">' . esc_html__( 'Previous Article', 'mesther' ) . '</span> %link' ); ?>
+			</div>
+			
+			<div class="nav-next">
+				<?php next_post_link( '<span class="nav-links__label">' . esc_html__( 'Next Article', 'cenote' ) . '</span> %link' ); ?>
+			</div>
 		</div><!-- .nav-links -->
 	</nav><!-- .navigation -->
 	<?php
