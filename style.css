@@ -571,6 +571,59 @@ img.wp-smiley,
 }
 
 
+/* Error Page */
+.error404 #primary {
+	width: 100%;
+}
+
+.error404 .error-img {
+	margin: 0 auto 50px;
+	max-width: 500px;
+}
+
+.error404 .error-404 {
+	text-align: center;
+	padding: 5rem 1rem;
+}
+
+.error404 .page-title {
+	font-size: 2.25rem;
+	margin: 0 0 20px;
+}
+
+.error404 .page-content p {
+	color: #adb5bd;
+	font-size: 1.125rem;
+	font-weight: 500;
+}
+
+.error404 .page-content a {
+	text-decoration: none;
+}
+
+.error404 .error-404__search .search-form {
+	margin-top: 30px;
+	position: relative;
+	max-width: 481px;
+	margin: 0 auto;
+}
+
+.error404 .error-404__search .search-form label {
+	display: block;
+}
+
+.error404 .error-404__search .search-form label input {
+	width: 100%;
+	padding-right: 6rem;
+}
+
+.error404 .error-404__search .search-form .search-submit {
+	top: 0;
+	position: absolute;
+	height: 100%;
+	right: 0;
+}
+
 /**
  * 3.0 Basic Structure
  * ----------------------------------------------------------------------------

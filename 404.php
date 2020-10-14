@@ -8,23 +8,29 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<div id="content" class="site-content" role="main">
+	<div id="primary" class="content-area error404">
+		<main id="main" class="site-main">
 
-			<header class="page-header">
-				<h1 class="page-title"><?php _e( 'Not Found', 'bootship' ); ?></h1>
-			</header>
+			<section class="error-404 not-found">
+				<img  class="error-img" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/404.svg" alt="">
+				<header class="page-header">
+					<h1 class="page-title"><?php esc_html_e( 'Not Found', 'everpartners' ); ?></h1>
+				</header><!-- .page-header -->
 
-			<div class="page-wrapper">
-				<div class="page-content">
-					<h2><?php _e( 'This is somewhat embarrassing, isn&rsquo;t it?', 'bootship' ); ?></h2>
-					<p><?php _e( 'It looks like nothing was found at this location. Maybe try a search?', 'bootship' ); ?></p>
+				<div class="page-wrapper">
+					<div class="page-content">
+						<p><?php esc_html_e( 'Try searching or ', 'everpartners' ); ?><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php esc_html_e( 'Go back to Home', 'cenote' ); ?></a></p>
 
-					<?php get_search_form(); ?>
-				</div><!-- .page-content -->
-			</div><!-- .page-wrapper -->
+						<div class="error-404__search">
+						<?php
+							get_search_form();
+						?>
+						</div>
+					</div><!-- .page-content -->
+				</div>
+			</section><!-- .error-404 -->
 
-		</div><!-- #content -->
+		</main><!-- #main -->
 	</div><!-- #primary -->
 
 <?php get_footer(); ?>
