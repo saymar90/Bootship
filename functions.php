@@ -177,7 +177,7 @@ function bootship_scripts_styles() {
   wp_enqueue_style( 'fontawesome', 'https://use.fontawesome.com/releases/v5.13.0/css/all.css', array(), '5.13.0' );
 
   // Animate CSS @link: https://animate.style stylesheet
-  wp_enqueue_style( 'animate', get_template_directory_uri() . '/css/animate.css', array(), '3.7.2' );
+  wp_enqueue_style( 'animate', get_template_directory_uri() . '/css/animate.css', array(), '4.1.1' );
 
   // Hover CSS @link: https://github.com/IanLunn/Hover stylesheet
   wp_enqueue_style( 'hover', get_template_directory_uri() . '/css/hover.css', array(), '2.3.2' );

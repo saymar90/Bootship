@@ -127,6 +127,9 @@
 		} );
 	}
 
-  new WOW().init();
+  var wow = new WOW({
+    animateClass: 'animate__animated', // animation css class (default is animated)
+  });
+  wow.init();
 } )( jQuery );
 
