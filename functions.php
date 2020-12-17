@@ -174,7 +174,7 @@ function bootship_scripts_styles() {
   wp_enqueue_style( 'bootship-style', get_stylesheet_uri(), array(), '2016-08-09' );
 
   // Font Awesome stylesheet
-  wp_enqueue_style( 'fontawesome', 'https://use.fontawesome.com/releases/v5.13.0/css/all.css', array(), '5.13.0' );
+  wp_enqueue_style( 'fontawesome', 'https://use.fontawesome.com/releases/v5.15.1/css/all.css', array(), '5.15.1' );
 
   // Animate CSS @link: https://animate.style stylesheet
   wp_enqueue_style( 'animate', get_template_directory_uri() . '/css/animate.css', array(), '4.1.1' );
