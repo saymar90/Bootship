@@ -1882,7 +1882,7 @@ img {
 @media (min-width: 783px) {
 }
 
-/* Extra small devices (portrait phones, less than 576px) */
+/* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
 }
 
@@ -1899,6 +1899,9 @@ img {
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
+@media (min-width: 1200px) and (max-width: 1399.98px) {
 }
 
+/* X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+}
