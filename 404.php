@@ -14,12 +14,12 @@ get_header(); ?>
 			<section class="error-404 not-found">
 				<img  class="error-img" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/404.svg" alt="">
 				<header class="page-header">
-					<h1 class="page-title"><?php esc_html_e( 'Not Found', 'everpartners' ); ?></h1>
+					<h1 class="page-title"><?php esc_html_e( 'Not Found', 'bootship' ); ?></h1>
 				</header><!-- .page-header -->
 
 				<div class="page-wrapper">
 					<div class="page-content">
-						<p><?php esc_html_e( 'Try searching or ', 'everpartners' ); ?><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php esc_html_e( 'Go back to Home', 'cenote' ); ?></a></p>
+						<p><?php esc_html_e( 'Try searching or ', 'bootship' ); ?><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php esc_html_e( 'Go back to Home', 'bootship' ); ?></a></p>
 
 						<div class="error-404__search">
 						<?php

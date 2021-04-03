@@ -298,14 +298,14 @@ function bootship_post_nav() {
 		return;
 	?>
 	<nav class="navigation post-navigation" role="navigation">
-		<h1 class="screen-reader-text"><?php _e( 'Post navigation', 'mesther' ); ?></h1>
+		<h1 class="screen-reader-text"><?php _e( 'Post navigation', 'bootship' ); ?></h1>
 		<div class="nav-links">
 			<div class="nav-previous">
-				<?php previous_post_link( '<span class="nav-links__label">' . esc_html__( 'Previous Article', 'mesther' ) . '</span> %link' ); ?>
+				<?php previous_post_link( '<span class="nav-links__label">' . esc_html__( 'Previous Article', 'bootship' ) . '</span> %link' ); ?>
 			</div>
 			
 			<div class="nav-next">
-				<?php next_post_link( '<span class="nav-links__label">' . esc_html__( 'Next Article', 'cenote' ) . '</span> %link' ); ?>
+				<?php next_post_link( '<span class="nav-links__label">' . esc_html__( 'Next Article', 'bootship' ) . '</span> %link' ); ?>
 			</div>
 		</div><!-- .nav-links -->
 	</nav><!-- .navigation -->
