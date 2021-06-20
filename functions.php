@@ -161,12 +161,15 @@ function bootship_scripts_styles() {
     wp_enqueue_script( 'jquery-masonry' );
 
   // Loads JavaScript file with functionality specific to Boot Ship.
-  wp_enqueue_script( 'bootship-script', get_template_directory_uri() . '/js/functions.js', array( 'jquery', 'wow' ), '2020-08-09', true );
+  wp_enqueue_script( 'bootship-script', get_template_directory_uri() . '/js/functions.js', array( 'jquery', 'wow', 'slick' ), '2020-08-09', true );
   wp_enqueue_script( 'popper', get_template_directory_uri() . '/js/popper.js', array(), '1.16.0', true );
   wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.js', array( 'jquery', 'popper' ), '5.0.1', true );
 
   // WOW.js @link https://github.com/matthieua/WOW
   wp_enqueue_script( 'wow', get_template_directory_uri() . '/js/wow.js', array( 'jquery' ), '1.1.3', true );
+  
+  // Slick.js @link https://kenwheeler.github.io/slick/
+  wp_enqueue_script( 'slick', get_template_directory_uri() . '/js/slick.js', array( 'jquery' ), '1.8.1', true );
 
   // Add Source Sans Pro and Bitter fonts, used in the main stylesheet.
   wp_enqueue_style( 'bootship-fonts', bootship_fonts_url(), array(), null );
@@ -184,6 +187,10 @@ function bootship_scripts_styles() {
 
   // Hover CSS @link: https://github.com/IanLunn/Hover stylesheet
   wp_enqueue_style( 'hover', get_template_directory_uri() . '/css/hover.css', array(), '2.3.2' );
+  
+  // Slick.css @link https://kenwheeler.github.io/slick/
+  wp_enqueue_style( 'slick', get_template_directory_uri() . '/css/slick.css', array(), 'v1.8.1' );
+  wp_enqueue_style( 'slick-theme', get_template_directory_uri() . '/css/slick-theme.css', array(), 'v1.8.1' );
 
   // Loads the Internet Explorer specific stylesheet.
   wp_enqueue_style( 'bootship-ie', get_template_directory_uri() . '/css/ie.css', array( 'bootship-style' ), '2016-08-09' );
