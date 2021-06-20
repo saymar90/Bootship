@@ -64,6 +64,9 @@ function bootship_setup() {
 
 	// Adds RSS feed links to <head> for posts and comments.
 	add_theme_support( 'automatic-feed-links' );
+  
+  // Adds support for WooCommerce customization
+  add_theme_support( 'woocommerce' );
 
 	/*
 	 * Switches default core markup for search form, comment form,
