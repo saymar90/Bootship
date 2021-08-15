@@ -708,7 +708,6 @@ input[type="submit"] {
 	padding: 0.7rem 1rem;
 	border-radius: 4px;
 	text-align: center;
-	white-space: nowrap;
 	-webkit-transition: all 0.35s ease-in-out;
 	transition: all 0.35s ease-in-out;
 }
