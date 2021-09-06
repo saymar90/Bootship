@@ -68,6 +68,10 @@ function bootship_setup() {
   // Adds support for WooCommerce customization
   add_theme_support( 'woocommerce' );
 
+  add_theme_support( 'wc-product-gallery-zoom' );
+  add_theme_support( 'wc-product-gallery-lightbox' );
+  add_theme_support( 'wc-product-gallery-slider' );
+
 	/*
 	 * Switches default core markup for search form, comment form,
 	 * and comments to output valid HTML5.
