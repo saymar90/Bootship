@@ -88,23 +88,19 @@ body {
 }
 
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
-
-a:visited {
+a:hover {
+  text-decoration: underline;
 }
-
-a:focus {
-	outline: thin dotted;
-}
-
+a,
 a:active,
-a:hover {
-	outline: 0;
+a:focus {
+  outline: 0;
+  border: none;
+  -moz-outline-style: none;
 }
-
-a:hover {
-	text-decoration: underline;
+a:visited {
 }
 
 h1,
