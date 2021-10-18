@@ -1098,7 +1098,8 @@ input[type="submit"]:hover::after {
 	-webkit-transition: -webkit-transform 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 	transition: -webkit-transform 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 	transition: transform 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-	transition: transform 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275), -webkit-transform 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	transition: transform 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    -webkit-transform 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .tg_widget_recent_posts ul li:hover,
@@ -1545,7 +1546,8 @@ img {
 	display: flex;
 }
 
-.post-template-cover .entry-thumbnail--template::before, .post-template-cover .entry-thumbnail--template::after {
+.post-template-cover .entry-thumbnail--template::before,
+.post-template-cover .entry-thumbnail--template::after {
 	background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.2)));
 	background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
 	display: block;
@@ -1656,7 +1658,8 @@ img {
 	-webkit-transition: -webkit-transform 0.45s cubic-bezier(0.79, 1, 0.92, 1);
 	transition: -webkit-transform 0.45s cubic-bezier(0.79, 1, 0.92, 1);
 	transition: transform 0.45s cubic-bezier(0.79, 1, 0.92, 1);
-	transition: transform 0.45s cubic-bezier(0.79, 1, 0.92, 1), -webkit-transform 0.45s cubic-bezier(0.79, 1, 0.92, 1);
+	transition: transform 0.45s cubic-bezier(0.79, 1, 0.92, 1),
+    -webkit-transform 0.45s cubic-bezier(0.79, 1, 0.92, 1);
 }
 
 .comment-navigation .nav-previous a,
@@ -1696,11 +1699,13 @@ img {
 	-webkit-transition: -webkit-transform 0.35s cubic-bezier(0.55, 1, 0.22, 1);
 	transition: -webkit-transform 0.35s cubic-bezier(0.55, 1, 0.22, 1);
 	transition: transform 0.35s cubic-bezier(0.55, 1, 0.22, 1);
-	transition: transform 0.35s cubic-bezier(0.55, 1, 0.22, 1), -webkit-transform 0.35s cubic-bezier(0.55, 1, 0.22, 1);
+	transition: transform 0.35s cubic-bezier(0.55, 1, 0.22, 1),
+    -webkit-transform 0.35s cubic-bezier(0.55, 1, 0.22, 1);
 	margin-bottom: 5px;
 }
 
-.comment-navigation .nav-previous .nav-links__label::before, .comment-navigation .nav-previous .nav-links__label::after,
+.comment-navigation .nav-previous .nav-links__label::before,
+.comment-navigation .nav-previous .nav-links__label::after,
 .comment-navigation .nav-next .nav-links__label::before,
 .comment-navigation .nav-next .nav-links__label::after,
 .posts-navigation .nav-previous .nav-links__label::before,
@@ -1719,7 +1724,8 @@ img {
 	transition: font-size 0.35s cubic-bezier(0.55, 1, 0.22, 1);
 }
 
-.comment-navigation .nav-previous:hover .nav-links__label::before, .comment-navigation .nav-previous:hover .nav-links__label::after,
+.comment-navigation .nav-previous:hover .nav-links__label::before,
+.comment-navigation .nav-previous:hover .nav-links__label::after,
 .comment-navigation .nav-next:hover .nav-links__label::before,
 .comment-navigation .nav-next:hover .nav-links__label::after,
 .posts-navigation .nav-previous:hover .nav-links__label::before,
