@@ -167,10 +167,10 @@ function bootship_scripts_styles() {
   // Loads JavaScript file with functionality specific to Boot Ship.
   wp_enqueue_script( 'bootship-script', get_template_directory_uri() . '/js/functions.js', array( 'jquery', 'wow', 'slick' ), '2020-08-09', true );
   wp_enqueue_script( 'popper', get_template_directory_uri() . '/js/popper.js', array(), '1.16.0', true );
-  wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.js', array( 'jquery', 'popper' ), '5.1.0', true );
+  wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.js', array( 'jquery', 'popper' ), '5.1.3', true );
 
   // WOW.js @link https://github.com/matthieua/WOW
-  wp_enqueue_script( 'wow', get_template_directory_uri() . '/js/wow.js', array( 'jquery' ), '1.1.3', true );
+  wp_enqueue_script( 'wow', get_template_directory_uri() . '/js/wow.js', array( 'jquery' ), '1.3.0', true );
   
   // Slick.js @link https://kenwheeler.github.io/slick/
   wp_enqueue_script( 'slick', get_template_directory_uri() . '/js/slick.js', array( 'jquery' ), '1.8.1', true );
@@ -179,13 +179,13 @@ function bootship_scripts_styles() {
   wp_enqueue_style( 'bootship-fonts', bootship_fonts_url(), array(), null );
 
   // Loads our main stylesheet.
-  wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.css', array(), '5.1.0' );
-  wp_enqueue_style( 'bootstrap-icons', get_template_directory_uri() . '/css/bootstrap-icons.css', array(), '1.5.0' );
+  wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.css', array(), '5.1.3' );
+  wp_enqueue_style( 'bootstrap-icons', get_template_directory_uri() . '/css/bootstrap-icons.css', array(), '1.6.0' );
   wp_enqueue_style( 'bootship-theme', get_template_directory_uri() . '/css/theme.css', array(), '1.0' );
   wp_enqueue_style( 'bootship-style', get_stylesheet_uri(), array(), '2016-08-09' );
 
   // Font Awesome stylesheet
-  wp_enqueue_style( 'fontawesome', 'https://use.fontawesome.com/releases/v5.15.1/css/all.css', array(), '5.15.1' );
+  wp_enqueue_style( 'fontawesome', 'https://use.fontawesome.com/releases/v5.15.4/css/all.css', array(), '5.15.4' );
 
   // Animate CSS @link: https://animate.style stylesheet
   wp_enqueue_style( 'animate', get_template_directory_uri() . '/css/animate.css', array(), '4.1.1' );
