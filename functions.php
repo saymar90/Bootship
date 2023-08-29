@@ -77,17 +77,9 @@ function bootship_setup() {
 	 * Switches default core markup for search form, comment form,
 	 * and comments to output valid HTML5.
 	 */
-	add_theme_support( 'html5', array(
-		'search-form', 'comment-form', 'comment-list', 'gallery', 'caption'
-	) );
-
-	/*
-	 * This theme supports all available post formats by default.
-	 * See http://codex.wordpress.org/Post_Formats
-	 */
-	add_theme_support( 'post-formats', array(
-		'aside', 'audio', 'chat', 'gallery', 'image', 'link', 'quote', 'status', 'video'
-	) );
+  add_theme_support( 'html5', array(
+    'comment-list', 'comment-form', 'search-form', 'gallery', 'caption', 'style', 'script'
+  ) );
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menu( 'primary', __( 'Navigation Menu', 'bootship' ) );
@@ -462,25 +454,6 @@ function bootship_the_attached_image() {
 	);
 }
 endif;
-
-/**
- * Return the post URL.
- *
- * @uses get_url_in_content() to get the URL in the post meta (if it exists) or
- * the first link found in the post content.
- *
- * Falls back to the post permalink if no URL is found in the post.
- *
- * @since Bootship 0.1
- *
- * @return string The Link format URL.
- */
-function bootship_get_link_url() {
-	$content = get_the_content();
-	$has_url = get_url_in_content( $content );
-
-	return ( $has_url ) ? $has_url : apply_filters( 'the_permalink', get_permalink() );
-}
 
 /**
  * Extend the default WordPress body classes.
