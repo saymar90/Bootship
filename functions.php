@@ -99,7 +99,7 @@ add_action( 'after_setup_theme', 'bootship_setup' );
 /**
  * Return the Google font stylesheet URL, if available.
  *
- * The use of Source Sans Pro and Bitter by default is localized. For languages
+ * The use of Source Sans 3 and Bitter by default is localized. For languages
  * that use characters not supported by the font, the font can be disabled.
  *
  * @since Bootship 0.1
@@ -110,10 +110,10 @@ function bootship_fonts_url() {
 	$fonts_url = '';
 
 	/* Translators: If there are characters in your language that are not
-	 * supported by Source Sans Pro, translate this to 'off'. Do not translate
+	 * supported by Source Sans 3, translate this to 'off'. Do not translate
 	 * into your own language.
 	 */
-	$source_sans_pro = _x( 'on', 'Source Sans Pro font: on or off', 'bootship' );
+	$source_sans_pro = _x( 'on', 'Source Sans 3 font: on or off', 'bootship' );
 
 	/* Translators: If there are characters in your language that are not
 	 * supported by Bitter, translate this to 'off'. Do not translate into your
@@ -125,7 +125,7 @@ function bootship_fonts_url() {
 		$font_families = array();
 
 		if ( 'off' !== $source_sans_pro )
-			$font_families[] = 'Source Sans Pro:300,400,700,300italic,400italic,700italic';
+			$font_families[] = 'Source Sans 3:200,300,400,500,600,700,800,900,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic';
 
 		if ( 'off' !== $bitter )
 			$font_families[] = 'Bitter:400,700';
@@ -168,7 +168,7 @@ function bootship_scripts_styles() {
   // Slick.js @link https://kenwheeler.github.io/slick/
   wp_enqueue_script( 'slick', get_template_directory_uri() . '/js/slick.js', array( 'jquery' ), '1.8.1', true );
 
-  // Add Source Sans Pro and Bitter fonts, used in the main stylesheet.
+  // Add Source Sans 3 and Bitter fonts, used in the main stylesheet.
   wp_enqueue_style( 'bootship-fonts', bootship_fonts_url(), array(), null );
 
   // Loads our main stylesheet.
