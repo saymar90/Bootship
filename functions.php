@@ -172,8 +172,8 @@ function bootship_scripts_styles() {
   wp_enqueue_style( 'bootship-fonts', bootship_fonts_url(), array(), null );
 
   // Loads our main stylesheet.
-  wp_enqueue_style( 'bootstrap-icons', get_template_directory_uri() . '/css/bootstrap-icons.css', array(), '1.10.5' );
   wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.css', array(), '5.3.3' );
+  wp_enqueue_style( 'bootstrap-icons', get_template_directory_uri() . '/css/bootstrap-icons.css', array(), '1.11.3' );
   wp_enqueue_style( 'bootship-theme', get_template_directory_uri() . '/css/theme.css', array(), '2021-11-28' );
   wp_enqueue_style( 'bootship-default', get_template_directory_uri() . '/css/default.css', array(), '2021-11-28' );
   wp_enqueue_style( 'bootship-style', get_stylesheet_uri(), array(), '2016-08-09' );
