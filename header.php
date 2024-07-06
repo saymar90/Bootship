@@ -37,6 +37,7 @@
 </head>
 
 <body <?php body_class(); ?>>
+	<a href="#main" class="skip-to-main-content-link screen-reader-text"><?php _e('Skip to main content', 'bootship'); ?></a>
 	<div id="page" class="hfeed site">
 		<header id="masthead" class="site-header container" role="banner">
 			<a class="home-link" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
