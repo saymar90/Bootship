@@ -159,7 +159,7 @@ function bootship_scripts_styles() {
 
   // Loads JavaScript file with functionality specific to Boot Ship.
   wp_enqueue_script( 'bootship-script', get_template_directory_uri() . '/js/functions.js', array( 'jquery', 'wow', 'slick' ), '2020-08-09', true );
-  wp_enqueue_script( 'popper', get_template_directory_uri() . '/js/popper.js', array(), '1.16.1', true );
+  wp_enqueue_script( 'popper', get_template_directory_uri() . '/js/popper.js', array(), '2.11.8', true );
   wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.js', array( 'jquery', 'popper' ), '5.3.3', true );
 
   // WOW.js @link https://github.com/matthieua/WOW
