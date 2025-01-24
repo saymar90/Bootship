@@ -61,7 +61,7 @@ function bootship_setup() {
    * specifically font, colors, icons, and column width.
    */
   add_theme_support( 'editor-styles' );
-  add_editor_style( array( 'assets/css/editor-style.css', 'https://use.fontawesome.com/releases/v5.15.4/assets/css/all.css', 'assets/css/bootstrap.css', bootship_fonts_url() ) );
+  add_editor_style( array( 'assets/css/editor-style.css', 'https://use.fontawesome.com/releases/v5.15.4/css/all.css', 'assets/css/bootstrap.css', bootship_fonts_url() ) );
 
 	// Adds RSS feed links to <head> for posts and comments.
 	add_theme_support( 'automatic-feed-links' );
@@ -179,7 +179,7 @@ function bootship_scripts_styles() {
   wp_enqueue_style( 'bootship-style', get_stylesheet_uri(), array(), '2016-08-09' );
 
   // Font Awesome stylesheet
-  wp_enqueue_style( 'fontawesome', 'https://use.fontawesome.com/releases/v5.15.4/assets/css/all.css', array(), '5.15.4' );
+  wp_enqueue_style( 'fontawesome', 'https://use.fontawesome.com/releases/v5.15.4/css/all.css', array(), '5.15.4' );
 
   // Animate CSS @link: https://animate.style stylesheet
   wp_enqueue_style( 'animate', get_template_directory_uri() . '/assets/css/animate.css', array(), '4.1.1' );
