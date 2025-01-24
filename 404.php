@@ -12,7 +12,7 @@ get_header(); ?>
 		<main id="main" class="site-main">
 
 			<section class="error-404 not-found">
-				<img  class="error-img" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/404.svg" alt="">
+				<img  class="error-img" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/404.svg" alt="">
 				<header class="page-header">
 					<h1 class="page-title"><?php esc_html_e( 'Not Found', 'bootship' ); ?></h1>
 				</header><!-- .page-header -->
