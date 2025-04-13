@@ -29,7 +29,9 @@ Use it to make something cool, have fun, and share what you've learned with othe
  * ----------------------------------------------------------------------------
  */
 
-
+html :where(.wp-block) {
+	max-width: 100% !important;
+}
 
 /**
  * 2.0 Media Queries
@@ -46,18 +48,54 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+	.site-content > *:not(div) {
+		max-width: calc(100% - 24px);
+	}
+}
+
+@media (min-width: 576px) {
+	.site-content > *:not(div) {
+		max-width: 540px;
+	}
 }
 
 /* Small devices (landscape phones, 576px, up to 768px) */
 @media (min-width: 576px) and (max-width: 767.98px) {
 }
 
+@media (min-width: 576px) and (max-width: 991.98px) {
+}
+
+@media (min-width: 768px) {
+	.site-content > *:not(div) {
+		max-width: 720px;
+	}
+}
+
 /* Medium devices (tablets, 768px, up to 992px) */
 @media (min-width: 768px) and (max-width: 991.98px) {
 }
 
+@media (max-width: 991.98px) {
+}
+
+@media (min-width: 992px) {
+	.site-content > *:not(div) {
+		max-width: 960px;
+	}
+}
+
 /* Large devices (desktops, 992px, up to 1200px) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
+}
+
+@media (max-width: 1199.98px) {
+}
+
+@media (min-width: 1200px) {
+	.site-content > *:not(div) {
+		max-width: 1140px;
+	}
 }
 
 /* X-Large devices (large desktops, 1200px, up to 1400px) */
@@ -66,4 +104,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
+	.site-content > *:not(div) {
+		max-width: 1320px;
+	}
 }
